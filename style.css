@@ -125,3 +125,90 @@ li {
     print-color-adjust: exact;
   }
 }
+.download-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 24px;
+  background: #fff;
+  color: #1a3c6e;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+.download-btn:hover {
+  background: #cfe0ff;
+}
+
+@media print {
+  .download-btn {
+    display: none;
+  }
+}
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+@media print {
+  body {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+  header {
+    padding: 16px 10px;
+  }
+  header h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+  }
+  .contact {
+    font-size: 12px;
+  }
+  main {
+    margin: 10px auto;
+    padding: 0;
+    max-width: 100%;
+  }
+  section {
+    padding: 6px 0;
+    margin-bottom: 6px;
+  }
+  h2 {
+    font-size: 14px;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+  }
+  h3 {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  h4 {
+    font-size: 12px;
+    margin: 8px 0 4px;
+  }
+  .meta {
+    font-size: 11px;
+  }
+  li {
+    margin-bottom: 2px;
+  }
+  .skills {
+    gap: 4px;
+  }
+  .skills li {
+    padding: 2px 8px;
+    font-size: 10.5px;
+  }
+  .job,
+  h2,
+  h3,
+  h4 {
+    break-inside: avoid;
+  }
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+}
